@@ -4,7 +4,6 @@ const mergeSort = (arr) => {
   const m = Math.floor(arr.length / 2);
   const l = arr.slice(0, m);
   const r = arr.slice(m, arr.length);
-  console.log(l, r);
   return merge(mergeSort(l), mergeSort(r));
 }
 
